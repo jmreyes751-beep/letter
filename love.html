@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my final act of love</title>
+    <style>
+        body {
+            background-color: black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Garamond', serif;
+        }
+
+        .envelope {
+            width: 350px;
+            padding: 50px;
+            background: linear-gradient(145deg, #1a1a1a, #151515);
+            border: 1px solid #2a2a2a;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            position: relative;
+            text-align: center;
+        }
+
+        .paper {
+            color: #444; 
+            line-height: 1.6;
+            transition: color 3s ease, text-shadow 2s ease;
+            cursor: crosshair;
+            user-select: none;
+        }
+
+        .hidden-text {
+            filter: blur(8px);
+            transition: filter 2s ease, color 2s ease;
+            display: block;
+            margin-top: 20px;
+        }
+
+        
+        .envelope:active .hidden-text, 
+        .envelope:hover .hidden-text {
+            filter: blur(0px);
+            color: #b0b0b0;
+            text-shadow: 0 0 5px rgba(255,255,255,0.1);
+        }
+
+        .instruction {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #333;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+            100% { opacity: 0.3; }
+        }
+
+        .tear-drop {
+            width: 2px;
+            height: 10px;
+            background: #2a2a2a;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="envelope">
+        <div class="tear-drop"></div>
+        <div class="paper">
+            <p>I didn't know how to say this out loud...</p>
+            
+            <span class="hidden-text">
+                Hi iza, ik mahirap siguro para sayo ung mga nangyayari at pinag dadaanan mo pero lagi mong tatandaan na andito lang ako. <br>
+             Tandaan mo na kahit anong mangyari kaya mo yan, bawal sumuko, lagi parin akong naka support sayo kahit na malayo nako sayo, <br>
+              masaya ako sa ma a-achieve mo.I hope na makamit mo lahat ng pangarap mo, sana every achievement mo i md mo para kahit dun mabati kita ng "congrats". <br>
+               Kung pag tagpuin ulit ang ating tadhana pipiliin parin kita. Sana lahat ng sacrifice na ginawa mo ay 'di masayang, every dreams need an action,<br>
+                naniniwala ako sa kakayahan mo. Ngayon'y aking sasabihin sa una't huling pagkakataon na mahal kita, na kahit malayo tayo sa isa't isa, palagi kang <br> 
+                may lugar sa puso ko, if ever you open your arms again, I'll always be here for you, Iloveyou iza.
+            </span>
+        </div>
+        
+        <div class="instruction">Hold to reveal the memory</div>
+    </div>
+
+</body>
+</html>
